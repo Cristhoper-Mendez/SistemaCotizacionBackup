@@ -1,0 +1,12 @@
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.deps.json
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\bin\Debug\net5.0\ref\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.csprojAssemblyReference.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.AssemblyInfoInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.AssemblyInfo.cs
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\ref\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.EntidadesDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.pdb

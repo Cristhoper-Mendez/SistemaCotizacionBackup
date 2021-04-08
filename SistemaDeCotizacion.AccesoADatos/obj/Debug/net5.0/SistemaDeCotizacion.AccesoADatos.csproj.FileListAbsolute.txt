@@ -1,0 +1,15 @@
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.deps.json
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\ref\SistemaDeCotizacion.AccesoADatos.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.csprojAssemblyReference.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.AssemblyInfoInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.AssemblyInfo.cs
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.csproj.CoreCompileInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\ref\SistemaDeCotizacion.AccesoADatos.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.AccesoADatos\obj\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.csproj.CopyComplete

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SistemaDeCotizacion.EntidadesDeNegocio/1.0.0": {
+        "runtime": {
+          "SistemaDeCotizacion.EntidadesDeNegocio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SistemaDeCotizacion.EntidadesDeNegocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

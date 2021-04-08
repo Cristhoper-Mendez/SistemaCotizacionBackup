@@ -1,0 +1,17 @@
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.deps.json
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\ref\SistemaDeCotizacion.LogicaDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.csprojAssemblyReference.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.AssemblyInfoInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.AssemblyInfo.cs
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.csproj.CoreCompileInputs.cache
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\ref\SistemaDeCotizacion.LogicaDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.dll
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.AccesoADatos.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\bin\Debug\net5.0\SistemaDeCotizacion.EntidadesDeNegocio.pdb
+D:\Tareas\Projects\Visual Studio 2019\SistemaDeCotizacion\SistemaDeCotizacion.LogicaDeNegocio\obj\Debug\net5.0\SistemaDeCotizacion.LogicaDeNegocio.csproj.CopyComplete

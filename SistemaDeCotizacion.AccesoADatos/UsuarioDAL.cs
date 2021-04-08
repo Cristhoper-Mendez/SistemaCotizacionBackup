@@ -1,0 +1,229 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//
+using Microsoft.EntityFrameworkCore;
+using SistemaDeCotizacion.EntidadesDeNegocio;
+using System.Security.Cryptography;
+
+namespace SistemaDeCotizacion.AccesoADatos
+{
+    public class UsuarioDAL
+    {
+        private static void EncriptarMD5(Usuario pUsuario)
+        {
+            using (var md5 = MD5.Create())
+            {
+                var result = md5.ComputeHash(Encoding.ASCII.GetBytes(pUsuario.Password));
+                var strEncriptar = "";
+                for (int i = 0; i < result.Length; i++)
+                    strEncriptar += result[i].ToString("x2").ToLower();
+                pUsuario.Password = strEncriptar;
+            }
+        }
+
+        private static async Task<bool> ExisteLogin(Usuario pUsuario, BDContexto pDdContexto)
+        {
+            var result = false;
+
+            var loginUsuarioExiste = await pDdContexto.Usuario.FirstOrDefaultAsync(s => s.Login == pUsuario.Login && s.IdUsuario != pUsuario.IdUsuario);
+            if (loginUsuarioExiste != null && loginUsuarioExiste.IdUsuario > 0 && loginUsuarioExiste.Login == pUsuario.Login)
+                result = true;
+
+            return result;
+        }
+
+        #region
+
+        public static async Task<int> CrearAsync(Usuario pUsuario)
+        {
+            int result = 0;
+
+            using (var bdContexto = new BDContexto())
+            {
+                bool existeLogin = await ExisteLogin(pUsuario, bdContexto);
+
+                if (existeLogin == false)
+                {
+                    pUsuario.FechaRegistro = DateTime.Now;
+                    EncriptarMD5(pUsuario);
+                    bdContexto.Add(pUsuario);
+                    result = await bdContexto.SaveChangesAsync();
+                }
+                else
+                    throw new Exception("Login ya existe");
+            }
+
+            return result;
+        }
+
+        public static async Task<int> ModificarAsync(Usuario pUsuario)
+        {
+            int result = 0;
+
+            using (var bdContexto = new BDContexto())
+            {
+                bool existeLogin = await ExisteLogin(pUsuario, bdContexto);
+
+                if (existeLogin == false)
+                {
+                    var usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.IdUsuario == pUsuario.IdUsuario);
+
+                    usuario.Rol = pUsuario.Rol;
+                    usuario.Nombre = pUsuario.Nombre;
+                    usuario.Apellido = pUsuario.Apellido;
+                    usuario.Telefono = pUsuario.Telefono;
+                    usuario.Correo = pUsuario.Correo;
+                    usuario.Login = pUsuario.Login;
+                    usuario.Estado = pUsuario.Estado;
+                    bdContexto.Update(usuario);
+                    result = await bdContexto.SaveChangesAsync();
+                }
+                else
+                    throw new Exception("Login ya existe");
+            }
+
+            return result;
+        }
+
+        public static async Task<int> EliminarAsync(Usuario pUsuario)
+        {
+            int result = 0;
+
+            using (var bdContexto = new BDContexto())
+            {
+                var usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.IdUsuario == pUsuario.IdUsuario);
+                bdContexto.Usuario.Remove(usuario);
+                result = await bdContexto.SaveChangesAsync();
+            }
+
+            return result;
+        }
+
+        public static async Task<Usuario> ObtenerPorIdAsync(Usuario pUsuario)
+        {
+            Usuario usuario = new Usuario();
+
+            using (var bdContexto = new BDContexto())
+            {
+                usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.IdUsuario == pUsuario.IdUsuario);
+            }
+
+            return usuario;
+        }
+
+        public static async Task<List<Usuario>> ObtenerTodosAsync()
+        {
+            var usuarios = new List<Usuario>();
+
+            using (var bdContexto = new BDContexto())
+            {
+                usuarios = await bdContexto.Usuario.ToListAsync();
+            }
+
+            return usuarios;
+        }
+
+        internal static IQueryable<Usuario> QuerySelect(IQueryable<Usuario> pQuery, Usuario pUsuario)
+        {
+            if (pUsuario.IdUsuario > 0)
+                pQuery = pQuery.Where(s => s.IdUsuario == pUsuario.IdUsuario);
+            if (pUsuario.IdRol > 0)
+                pQuery = pQuery.Where(s => s.IdRol == pUsuario.IdRol);
+            if (!string.IsNullOrWhiteSpace(pUsuario.Nombre))
+                pQuery = pQuery.Where(s => s.Nombre.Contains(pUsuario.Nombre));
+            if (!string.IsNullOrWhiteSpace(pUsuario.Apellido))
+                pQuery = pQuery.Where(s => s.Apellido.Contains(pUsuario.Apellido));
+            if (!string.IsNullOrWhiteSpace(pUsuario.Login))
+                pQuery = pQuery.Where(s => s.Login.Contains(pUsuario.Login));
+            if (pUsuario.Estado > 0)
+                pQuery = pQuery.Where(s => s.Estado == pUsuario.Estado);
+            if (pUsuario.FechaRegistro.Year > 1000)
+            {
+                DateTime fechaInicial = new DateTime(pUsuario.FechaRegistro.Year, pUsuario.FechaRegistro.Month, pUsuario.FechaRegistro.Day, 0, 0, 0);
+                DateTime fechaFinal = fechaInicial.AddDays(1).AddMilliseconds(-1);
+                pQuery = pQuery.Where(s => s.FechaRegistro >= fechaInicial && s.FechaRegistro <= fechaFinal);
+            }
+
+            pQuery = pQuery.OrderByDescending(s => s.IdUsuario).AsQueryable();
+
+            if (pUsuario.Top_Aux > 0)
+                pQuery = pQuery.Take(pUsuario.Top_Aux).AsQueryable();
+
+            return pQuery;
+        }
+
+        public static async Task<List<Usuario>> BuscarAsync(Usuario pUsuario)
+        {
+            var usuarios = new List<Usuario>();
+
+            using (var bdContexto = new BDContexto())
+            {
+                var select = bdContexto.Usuario.AsQueryable();
+                select = QuerySelect(select, pUsuario);
+                usuarios = await select.ToListAsync();
+            }
+
+            return usuarios;
+        }
+
+        #endregion
+
+        public static async Task<List<Usuario>> BuscarIncluirRolesAsync(Usuario pUsuario)
+        {
+            var usuarios = new List<Usuario>();
+
+            using (var bdContexto = new BDContexto())
+            {
+                var select = bdContexto.Usuario.AsQueryable();
+                select = QuerySelect(select, pUsuario).Include(s => s.Rol).AsQueryable();
+                usuarios = await select.ToListAsync();
+            }
+
+            return usuarios;
+        }
+
+        public static async Task<Usuario> LoginAsync(Usuario pUsuario)
+        {
+            var usuario = new Usuario();
+
+            using (var bdContexto = new BDContexto())
+            {
+                EncriptarMD5(pUsuario);
+                usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.Login == pUsuario.Login &&
+                    s.Password == pUsuario.Password && s.Estado == (byte)(Estatus_Usuario.ACTIVO)
+                );
+            }
+
+            return usuario;
+        }
+
+        public static async Task<int> CambiarPasswordAsync(Usuario pUsuario, string pPasswordAnt)
+        {
+            int result = 0;
+
+            var usuarioPasAnt = new Usuario { Password = pPasswordAnt };
+            EncriptarMD5(usuarioPasAnt);
+
+            using (var bdContexto = new BDContexto())
+            {
+                var usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.IdUsuario == pUsuario.IdUsuario);
+
+                if (usuarioPasAnt.Password == usuario.Password)
+                {
+                    EncriptarMD5(pUsuario);
+                    usuario.Password = pUsuario.Password;
+                    bdContexto.Update(usuario);
+                    result = await bdContexto.SaveChangesAsync();
+                }
+                else
+                    throw new Exception("El password es incorrecto");
+            }
+
+            return result;
+        }
+    }
+}

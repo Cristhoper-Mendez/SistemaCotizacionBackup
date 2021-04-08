@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.LogicaDeNegocio\\SistemaDeCotizacion.LogicaDeNegocio.csproj": {}
+  },
+  "projects": {
+    "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\SistemaDeCotizacion.AccesoADatos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\SistemaDeCotizacion.AccesoADatos.csproj",
+        "projectName": "SistemaDeCotizacion.AccesoADatos",
+        "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\SistemaDeCotizacion.AccesoADatos.csproj",
+        "packagesPath": "C:\\Users\\oditi\\.nuget\\packages\\",
+        "outputPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oditi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj": {
+                "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj",
+        "projectName": "SistemaDeCotizacion.EntidadesDeNegocio",
+        "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\oditi\\.nuget\\packages\\",
+        "outputPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oditi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.LogicaDeNegocio\\SistemaDeCotizacion.LogicaDeNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.LogicaDeNegocio\\SistemaDeCotizacion.LogicaDeNegocio.csproj",
+        "projectName": "SistemaDeCotizacion.LogicaDeNegocio",
+        "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.LogicaDeNegocio\\SistemaDeCotizacion.LogicaDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\oditi\\.nuget\\packages\\",
+        "outputPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.LogicaDeNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oditi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\SistemaDeCotizacion.AccesoADatos.csproj": {
+                "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.AccesoADatos\\SistemaDeCotizacion.AccesoADatos.csproj"
+              },
+              "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj": {
+                "projectPath": "D:\\Tareas\\Projects\\Visual Studio 2019\\SistemaDeCotizacion\\SistemaDeCotizacion.EntidadesDeNegocio\\SistemaDeCotizacion.EntidadesDeNegocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
